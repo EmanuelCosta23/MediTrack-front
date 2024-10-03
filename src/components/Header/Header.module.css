@@ -1,0 +1,16 @@
+.header {
+    background-color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
+    align-items: center;
+}
+
+.header span {
+    height: 50px;
+    font-size: 32px;
+    align-items: center;
+    flex-grow: 1;
+}
+

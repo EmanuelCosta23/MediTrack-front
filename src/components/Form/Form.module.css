@@ -1,0 +1,15 @@
+.form {
+    display: flex;
+    width: 375px;
+    height: auto;
+    flex-direction: column;
+}
+
+.form h1 {
+    text-align: center;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}

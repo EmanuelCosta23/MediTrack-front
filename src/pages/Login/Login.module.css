@@ -1,0 +1,21 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.conteudo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link1{
+    float: right; 
+}
+
+.link2{
+    margin-top: 10px;
+    text-align: center;
+}
