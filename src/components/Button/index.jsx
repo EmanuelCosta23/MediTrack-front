@@ -1,7 +1,9 @@
 import styles from "./Button.module.css";
 
-export default function Button({botao}) {
+export default function Button({text, onClick, type = "button"}) {
     return (
-        <button type="submit" className={styles.button}>{botao}</button>
+        <button type={type} onClick={onClick} className={styles.button}>
+            {text}
+        </button>
     )
 }

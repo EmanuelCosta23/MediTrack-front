@@ -1,10 +1,14 @@
 import './App.css'
 import AppRoutes from './routes'
+import { AuthProvider } from "./contexts/auth";
+
 
 export default function App() {
 
   return (
-    <AppRoutes />
+    <AuthProvider>
+      <AppRoutes />
+    </AuthProvider>
   )
 }
  
