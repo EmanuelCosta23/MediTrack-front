@@ -16,7 +16,7 @@ export default function Senha() {
                     text="E-mail" 
                     placeholder="digite seu e-mail" 
                     name="email"/>
-                <Button botao="Enviar e-mail" />
+                <Button text="Enviar e-mail" />
                 </Form>
             </div>
         </div>

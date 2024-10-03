@@ -30,7 +30,7 @@ export default function Perfil() {
                     text="Data de nascimento" 
                     placeholder="digite sua data de nascimento" 
                     name="data"/>
-                <Button botao="Salvar" />
+                <Button text="Salvar" />
                 </Form>
             </div>
         </div>

@@ -35,7 +35,7 @@ export default function Cadastro() {
                     text="Data de nascimento" 
                     placeholder="digite sua data de nascimento" 
                     name="data"/>
-                <Button botao="Cadastrar" />
+                <Button text="Cadastrar" />
                 </Form>
             </div>
         </div>
