@@ -1,0 +1,32 @@
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right, #4388FF, #5ACAE2);
+    height: 60px;
+    border-radius: 15px;
+    align-items: center;
+    width: 300px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.inputPesquisa{
+    color: #fff;
+    background: none;
+    width: 252px;
+    height: 32px;
+    padding-left: 10px;
+    border: 1px solid #ffff;
+    border-radius: 10px;
+    outline: none;
+}
+
+.inputPesquisa::placeholder{
+    color: #ffff;
+}
+
+.iconePesquisa{
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+}

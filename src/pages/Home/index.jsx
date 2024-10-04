@@ -1,10 +1,10 @@
 import styles from "./Home.module.css"
-import Header from "../../components/Header"
+import HeaderLogin from "../../components/HeaderLogin"
 
 export default function Home() {
     return(
       <div className={styles.home}>
-        <Header/>
+        <HeaderLogin/>
         <div className={styles.conteudo}>
           <h1>Home</h1>
         </div>
