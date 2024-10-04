@@ -6,6 +6,8 @@ import Button from "../../components/Button"
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import axios from "axios"
+import { IoArrowBackSharp } from "react-icons/io5";
+import { Link } from 'react-router-dom'
 
 export default function Cadastro(props) {
     const navigate = useNavigate();
@@ -38,6 +40,9 @@ export default function Cadastro(props) {
         <div className={styles.cadastro}>
             <Header/>
             <div className={styles.conteudo}>
+                <Link to="/">
+                    <IoArrowBackSharp className={styles.backButton} />
+                </Link>
                 <Form titulo="Cadastro">
                 <Input 
                     type="text" 

@@ -3,12 +3,17 @@ import Header from "../../components/Header"
 import Form from "../../components/Form"
 import Input from "../../components/Input"
 import Button from "../../components/Button"
+import { Link } from 'react-router-dom'
+import { IoArrowBackSharp } from "react-icons/io5";
 
 export default function Perfil() {
     return(
         <div className={styles.perfil}>
             <Header/>
             <div className={styles.conteudo}>
+                <Link to="/home">
+                    <IoArrowBackSharp className={styles.backButton} />
+                </Link>
                 <Form titulo="Edite seus dados">
                 <Input 
                     type="text" 

@@ -3,12 +3,17 @@ import Header from "../../components/Header"
 import Form from "../../components/Form"
 import Input from "../../components/Input"
 import Button from "../../components/Button"
+import { IoArrowBackSharp } from "react-icons/io5"
+import { Link } from 'react-router-dom'
 
 export default function Senha() {
     return(
         <div className={styles.senha}>
             <Header/>
             <div className={styles.conteudo}>
+                <Link to="/">
+                    <IoArrowBackSharp className={styles.backButton} />
+                </Link>
                 <Form titulo="Perdeu sua senha?">
                 <p>Não se preocupe nos informe o seu e-mail cadastrado e aguarde o nosso contato nos próximos minutos.</p>
                 <Input 

@@ -10,3 +10,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.backButton{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+}

@@ -4,6 +4,7 @@ import Cadastro from "./pages/Cadastro";
 import Perfil from "./pages/Perfil";
 import Senha from "./pages/Senha";
 import Home from "./pages/Home";
+import RemediosSalvos from "./pages/RemediosSalvos";
 
 export default function AppRoutes() {
     return (
@@ -14,6 +15,7 @@ export default function AppRoutes() {
                 <Route path="/perfil" element={<Perfil />}/>
                 <Route path="/senha" element={<Senha />}/>
                 <Route path="/home" element={<Home />}/>
+                <Route path="/remedios-salvos" element={<RemediosSalvos />}/>
             </Routes>
         </BrowserRouter>
     )
