@@ -1,7 +1,16 @@
 .button {
     height: 50px;
-    margin-top: 25px;
+    margin-top: 45px;
+    border: 1px solid #E3F2FD;
     border-radius: 12px;
-    background-color: rgb(94, 94, 245);
+    background-image: linear-gradient(to right, #4388FF, #5ACAE2);
     font-size: 17px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover, .button:active{
+    border: 1px solid #69b4d4;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }

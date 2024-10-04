@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-
+import logo from "../../assets/logo.png"
 import { Link } from 'react-router-dom'
 import styles from "./Login.module.css"
 import Header from "../../components/Header"
@@ -33,7 +33,11 @@ export default function Login(props) {
     <div className={styles.login}>
       <Header />
       <div className={styles.conteudo}>
-        <Form titulo="MediTrack">
+        <Form>
+        <div className={styles.titulo}>
+              <img src={logo} className={styles.logo}/>
+              <h1><span>Medi</span>Track</h1>
+            </div>
           <Input
             type="text"
             text="E-mail"
