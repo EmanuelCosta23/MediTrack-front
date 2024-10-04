@@ -8,9 +8,19 @@
 }
 
 .header span {
+    font-family: "Raleway";
+    font-weight: bold;
     height: 50px;
     font-size: 32px;
     align-items: center;
     flex-grow: 1;
 }
 
+.medi{
+    color: rgb(38, 174, 184);
+}
+
+.logo{
+    width: 58px;
+    height: 58px;
+}

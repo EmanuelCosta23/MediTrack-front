@@ -8,8 +8,16 @@
 }
 
 .input input {
+    margin-top: 3px;
     height: 45px;
     width: 100%;
-    border-color: #0957DE;
+    border: 1px solid #0957DE;
     border-radius: 10px;
+    padding-left: 10px;
+    outline: none;
+}
+
+input:focus {
+    border-color: rgb(76, 165, 165);
+    box-shadow: 0 0 5px 0 #0957DE;
 }

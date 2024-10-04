@@ -4,13 +4,19 @@ import Header from "../../components/Header"
 import Form from "../../components/Form"
 import Input from "../../components/Input"
 import Button from "../../components/Button"
+import logo from "../../assets/logo.png"
+
 
 export default function Login() {
     return(
       <div className={styles.login}>
         <Header/>
         <div className={styles.conteudo}>
-          <Form titulo="MediTrack">
+          <Form>
+            <div className={styles.titulo}>
+              <img src={logo} className={styles.logo}/>
+              <h1><span>Medi</span>Track</h1>
+            </div>
             <Input 
               type="text" 
               text="E-mail" 

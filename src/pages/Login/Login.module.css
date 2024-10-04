@@ -12,10 +12,31 @@
 }
 
 .link1{
+    margin-top: 5px;
     float: right; 
 }
 
 .link2{
     margin-top: 10px;
     text-align: center;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo span{
+    color: rgb(38, 174, 184);
+}
+
+.titulo img{
+    width: 58px;
+    height: 58px;
+}
+
+.titulo h1{
+    margin-bottom: 0px;
 }
