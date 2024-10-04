@@ -1,6 +1,4 @@
-.input {
-    margin-top: 25px;
-}
+.input {}
 
 .input label {
     display: block;
@@ -12,4 +10,6 @@
     width: 100%;
     border-color: #0957DE;
     border-radius: 10px;
+    padding-left: 5px;
+    margin-top: 5px;
 }
