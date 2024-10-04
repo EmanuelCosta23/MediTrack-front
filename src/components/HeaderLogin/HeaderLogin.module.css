@@ -1,12 +1,13 @@
 .header {
     background-color: white;
     height: 100px;
+    position: relative;
     display: flex;
     flex-direction: row;
     padding-right: 100px;
     padding-left: 80px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .header span {
@@ -27,11 +28,19 @@
 }
 
 .logout {
+    right: 120px;
+    position: absolute;
     width: 30px;
     height: 30px;
 }
 
 .logoContainer{
+    left: 120px;
+    position: absolute;
     display: flex;
     align-items: center;
+}
+
+.pesquisa {
+    align-self: flex-start;
 }
