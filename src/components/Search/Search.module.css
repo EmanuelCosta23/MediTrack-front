@@ -5,7 +5,7 @@
     height: 60px;
     border-radius: 15px;
     align-items: center;
-    width: 300px;
+    width: 400px;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -19,6 +19,7 @@
     border: 1px solid #ffff;
     border-radius: 10px;
     outline: none;
+    margin-right: 5px;
 }
 
 .inputPesquisa::placeholder{
@@ -29,4 +30,14 @@
     margin-right: 5px;
     width: 25px;
     height: 25px;
+}
+
+.buttonPesquisa {
+    border: 1px solid #E3F2FD;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
