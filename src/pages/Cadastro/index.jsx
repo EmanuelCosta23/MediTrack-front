@@ -5,10 +5,11 @@ import Input from "../../components/Input"
 import Button from "../../components/Button"
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
-import axios from "axios"
+import { UserService } from "../../services/api/userService"
 
 export default function Cadastro(props) {
     const navigate = useNavigate();
+    const userService = new UserService();
 
     const [nomeCompleto, setNomeCompleto] = useState(props?.value ?? '');
     const [cpf, setCpf] = useState(props?.value ?? '');
@@ -16,7 +17,7 @@ export default function Cadastro(props) {
     const [senha, setSenha] = useState(props?.value ?? '');
     const [dataNascimento, setDataNascimento] = useState(props?.value ?? '');
 
-    const fazerCadastro = event => {
+    const fazerCadastro = async (event) => {
         event.preventDefault();
         
         const credencial = {
@@ -26,12 +27,10 @@ export default function Cadastro(props) {
           "senha": senha,
           "dataNascimento": dataNascimento
         }
-    
-        axios.post("http://localhost:8080/api/usuario/cadastro", credencial)
-          .then(res => {
-            console.log(res.data);
-            navigate("/home", { replace: true });
-          })
+
+        const signupResponse = await userService.signup(credencial);
+        console.log(signupResponse);
+        navigate('/home', {replace: true});
       };
 
     return(

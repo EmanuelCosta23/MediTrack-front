@@ -7,26 +7,27 @@ import Header from "../../components/Header"
 import Form from "../../components/Form"
 import Input from "../../components/Input"
 import Button from "../../components/Button"
-import axios from 'axios'
+import { UserService } from '../../services/api/userService'
+
 
 export default function Login(props) {
   const navigate = useNavigate();
+  const userService = new UserService();
 
   const [email, setEmail] = useState(props?.value ?? '');
   const [senha, setSenha] = useState(props?.value ?? '');
 
-  const fazerLogin = event => {
+  const fazerLogin = async (event) => {
     event.preventDefault();
+    
     const credencial = {
       "email": email,
       "senha": senha
     }
 
-    axios.post("http://localhost:8080/api/usuario/login", credencial)
-      .then(res => {
-        console.log(res.data);
-        navigate("/home", { replace: true });
-      })
+    const loginResponse = await userService.login(credencial);
+    console.log(loginResponse);
+    navigate('/home', {replace: true})
   };
 
   return (
