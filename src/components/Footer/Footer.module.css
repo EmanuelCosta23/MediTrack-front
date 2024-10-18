@@ -1,0 +1,22 @@
+.footer {
+    background-color: rgba(16, 156, 226, 0.181);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer span {
+    font-family: "Raleway";
+    font-size: 10pt;
+}
+
+.medi{
+    color: rgb(38, 174, 184);
+}
+
+.logo{
+    width: 58px;
+    height: 58px;
+}

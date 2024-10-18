@@ -22,7 +22,7 @@ export default function Login(props) {
       "senha": senha
     }
 
-    axios.post("http://localhost:8080/api/usuario/login", credencial)
+    axios.post("http://localhost:5000/api/usuario/login", credencial)
       .then(res => {
         console.log(res.data);
         navigate("/home", { replace: true });
